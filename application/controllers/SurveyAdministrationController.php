@@ -1752,7 +1752,7 @@ class SurveyAdministrationController extends LSBaseController
         $iSurveyID = (int) $surveyid;
         $aViewUrls = $aData = [];
         $menuaction = (string) $subaction;
-        $iSurveyID = (int) $iSurveyID;
+
         $survey = Survey::model()->findByPk($iSurveyID);
         $aData['oSurvey'] = $survey;
         // set values from database to survey attributes

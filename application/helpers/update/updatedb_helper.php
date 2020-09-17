@@ -3268,7 +3268,6 @@ function db_upgrade_all($iOldDBVersion, $bSilent = false)
             $oTransaction->commit();
         }
 
-
         if ($iOldDBVersion < 431) {
             // Update 'Theme Options' Entry (Side Menu Link) in Survey Menu Entries.
             $oTransaction = $oDB->beginTransaction();
@@ -3285,6 +3284,9 @@ function db_upgrade_all($iOldDBVersion, $bSilent = false)
             $oTransaction->commit();
         }
 
+        if ($iOldDBVersion < 432) {
+            // Update 'Text Elements' -> Remove Vue JS 
+        }
     } catch (Exception $e) {
         Yii::app()->setConfig('Updating', false);
         $oTransaction->rollback();
