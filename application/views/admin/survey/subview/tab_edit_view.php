@@ -35,7 +35,7 @@ $adminlang = Yii::app()->session['adminlang'];
                 :defaultlanguage="'<?= $adminlang; ?>'"
         />
     </div> -->
-    <div id="textEditLoader" class="ls-flex ls-flex-column align-content-center align-items-center">
+    <!-- <div id="textEditLoader" class="ls-flex ls-flex-column align-content-center align-items-center">
         <div class="ls-flex align-content-center align-items-center">
             <div class="loader-advancedquestionsettings text-center">
                 <div class="contain-pulse animate-pulse">
@@ -46,5 +46,5 @@ $adminlang = Yii::app()->session['adminlang'];
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
